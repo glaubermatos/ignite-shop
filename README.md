@@ -64,5 +64,7 @@ Capítulo 2: Estrutura visual - Estrutura da Home
 
 Nessa aula vamos começar a estruturar e estilizar nossa página Home, exibindo a estrutura inicial da visualização dos produtos.
 
+Capitulo 2: Estrutura visual - Criando carrossel
 
+Agora vamos implementar a funcionalidade de carrosell para nossa aplicação, que torna possível a gente fazer um scroll horizontal para visualizar mais produtos na nossa tela.
 
