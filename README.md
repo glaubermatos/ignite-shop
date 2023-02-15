@@ -68,3 +68,7 @@ Capitulo 2: Estrutura visual - Criando carrossel
 
 Agora vamos implementar a funcionalidade de carrosell para nossa aplicação, que torna possível a gente fazer um scroll horizontal para visualizar mais produtos na nossa tela.
 
+Capitulo 3: Integração com Stripe - Configurando conta Stripe
+
+Nessa aula, vamos ver como configurar a conta do Stripe e fazer o cadastro dos produtos para poder preparar nossa aplicação para consumir a API.
+
