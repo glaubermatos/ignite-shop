@@ -54,3 +54,8 @@ export const { styled, getCssText, globalCss } = createStitches({
 Capitulo 2: Estrutura visual - Cabeçalho da aplicação
 
 Nessa aula vamos começar a criar os elementos do nosso App, começando pelo Header.
+
+
+Capitulo 2: Estrutura visual - Imagens no Next.js
+
+O NextJS é um framework que possui muito mais funcionalidades que somente SSR e SSG. Nessa aula vamos conhecer uma de suas features, que é a funcionalidade de otimização de imagens.
