@@ -59,3 +59,10 @@ Nessa aula vamos começar a criar os elementos do nosso App, começando pelo Hea
 Capitulo 2: Estrutura visual - Imagens no Next.js
 
 O NextJS é um framework que possui muito mais funcionalidades que somente SSR e SSG. Nessa aula vamos conhecer uma de suas features, que é a funcionalidade de otimização de imagens.
+
+Capítulo 2: Estrutura visual - Estrutura da Home
+
+Nessa aula vamos começar a estruturar e estilizar nossa página Home, exibindo a estrutura inicial da visualização dos produtos.
+
+
+
