@@ -50,3 +50,7 @@ export const { styled, getCssText, globalCss } = createStitches({
   }
 })
 ```
+
+Capitulo 2: Estrutura visual - Cabeçalho da aplicação
+
+Nessa aula vamos começar a criar os elementos do nosso App, começando pelo Header.
