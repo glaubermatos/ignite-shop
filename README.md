@@ -108,3 +108,7 @@ Nessa aula vamos começar a entender as especificidades do NextJS sobre a geraç
 Capitulo 4: Produto & Checkout - Fallback do SSG
 
 Nessa aula entenderemos o que é o parâmetro fallback do método getStaticPaths e estratégias de geração de páginas estáticas que recebem parâmetros dinâmicos.
+
+Capitulo 4: Produto & Checkout - Prefetch de links
+
+Agora vamos conhecer mais uma feature do NextJS, que é um prefetch de páginas à partir do Link.
