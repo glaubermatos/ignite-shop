@@ -77,3 +77,7 @@ Capitulo 3: Integração com Stripe - Buscando produtos do Stripe
 
 Vamos agora entender como utilizar a SDK do Stripe para realizar uma busca dos produtos cadastrados para poder exibí-los na nossa listagem de produtos.
 
+
+Capitulo 3: Integração com Stripe - Utilizando SSG
+
+Nessa aula vamos entender os conceitos por trás da geração de páginas estáticas, e como utilizar o SSG para criar uma versão estática da nossa página que fica cacheada para acelerar o carregamento e até diminuir o número de requisições à API.
