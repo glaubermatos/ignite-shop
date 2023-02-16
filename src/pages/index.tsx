@@ -9,15 +9,13 @@ import { stripe } from "../lib/stripe";
 import Stripe from "stripe";
 
 import 'keen-slider/keen-slider.min.css'
+import Link from "next/link";
 
 interface Product {
   id: string;
   name: string;
-  description: string;
   imageUrl: string;
-  price_id: string;
-  price: number;
-  formattedPrice: string;
+  price: string;
 }
 
 interface HomeProps {
@@ -36,14 +34,19 @@ export default function Home({products}: HomeProps) {
     <HomeContainer ref={sliderRef} className="keen-slider">
       { products.map(product => {
         return (
-          <Product key={product.id} className="keen-slider__slide">
-            <Image src={product.imageUrl} width={520} height={480} alt="" />
+          <Link
+            key={product.id}
+            href={`/product/${product.id}`} 
+          >
+            <Product className="keen-slider__slide">
+              <Image src={product.imageUrl} width={520} height={480} alt="" />
 
-            <footer>
-              <strong>{product.name}</strong>
-              <span>{product.formattedPrice}</span>
-            </footer>
-          </Product>
+              <footer>
+                <strong>{product.name}</strong>
+                <span>{product.price}</span>
+              </footer>
+            </Product>
+          </Link>
         )
       })}
       
@@ -65,14 +68,11 @@ export const getStaticProps: GetStaticProps = async () => {
     return {
       id: product.id,
       name: product.name,
-      description: product.name,
       imageUrl: product.images[0],
-      price_id: price.id,
-      price: price.unit_amount,
-      formattedPrice: new Intl.NumberFormat('pt-BR', {
+      price:  new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL'
-      }).format(price.unit_amount / 100)
+      }).format(price.unit_amount / 100),
     }
   })
 

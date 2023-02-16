@@ -81,3 +81,12 @@ Vamos agora entender como utilizar a SDK do Stripe para realizar uma busca dos p
 Capitulo 3: Integração com Stripe - Utilizando SSG
 
 Nessa aula vamos entender os conceitos por trás da geração de páginas estáticas, e como utilizar o SSG para criar uma versão estática da nossa página que fica cacheada para acelerar o carregamento e até diminuir o número de requisições à API.
+
+
+Capitulo 3: Integração com Stripe - Formatando preço
+
+Agora vamos utilizar a classe Intl para poder formatar o preço dos produtos e exibí-los em tela já formatado.
+
+Capitulo 4: Produto & Checkout - Navegação via Link
+
+Nessa aula vamos entender sobre como a navegação funciona no NextJS, e como podemos utilizar as ferramentas que o NextJS provém para ter uma navegação melhor na nossa aplicação.
