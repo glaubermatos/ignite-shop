@@ -122,3 +122,7 @@ Agora que já sabemos como criar as rotas server-side, vamos utilizar dessas rot
 Capitulo 4: Produto & Checkout - Botão de comprar
 
 Nessa aula vamos integrar todas as funcionalidades da nossa aplicação, criando um checkout à partir do ID do produto selecionado.
+
+Capitulo 4: Produto & Checkout - Estrutura de sucesso
+
+Agora vamos estilizar a nossa página de sucesso para preparar ela para receber os dados após a compra.
