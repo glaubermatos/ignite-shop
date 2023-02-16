@@ -1,20 +1,31 @@
 import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import Stripe from 'stripe'
 import { stripe } from '../../lib/stripe'
 import { ImageContainer, ProductContainer, ProductDetails } from '../../styles/pages/product'
 
+interface Product {
+    id: string,
+    name: string,
+    description: string,
+    imageUrl: string,
+    price: string,
+}
+
 interface ProductProps {
-    product: {
-        id: string,
-        description: string,
-        name: string,
-        imageUrl: string,
-        price: string,
-    }
+    product: Product
 }
 
 export default function Product({ product }: ProductProps) {
+    const { isFallback } = useRouter()
+
+    if (isFallback) {
+        return (
+            <h1>Loading...</h1>
+        )
+    }
+
     return (
         <ProductContainer>
             <ImageContainer>
@@ -25,7 +36,8 @@ export default function Product({ product }: ProductProps) {
                 <h1>{product.name}</h1>
                 <span>{product.price}</span>
 
-                <p>{product.description}</p>
+                <div dangerouslySetInnerHTML={{__html:product.description}}></div>
+                {/* <p>{product.description}</p> */}
 
                 <button>
                     Comprar agora
@@ -36,18 +48,22 @@ export default function Product({ product }: ProductProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    // const response = await stripe.products.list({
-    //     active: true,
-    //     limit: 2,
-    // })
+    const response = await stripe.products.list({
+        active: true,
+        limit: 3,
+    })
+
+    const paths = response.data.map((product) => {
+        return {
+            params: {
+                id: product.id
+            }
+        }
+    })
 
     return {
-        paths: [{
-            params: {
-                id: 'prod_NMaVVvKxcE4Lzy'
-            }
-        }],
-        fallback: false,
+        paths,
+        fallback: true,
     }
 }
 
@@ -68,13 +84,13 @@ export const getStaticProps: GetStaticProps<any, {id: string}> = async ({params}
         price: new Intl.NumberFormat('pt-BR', {
             style: 'currency',
             currency: 'BRL'
-        }).format(price.unit_amount)
+        }).format(price.unit_amount / 100)
     }
 
     return {
         props: {
             product
         },
-        revalidade: 60 * 60 * 24, // 24 hours
+        // revalidade: 60 * 60 * 2, // 2 hours
     }
 }

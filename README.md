@@ -101,6 +101,9 @@ Capitulo 4: Produto & Checkout - Caregando dados do produto
 
 Nessa aula vamos entender como criar páginas dinâmicas no NextJS à partir do parâmetro enviado a ela, e carregaremos os dados dos nossos produtos dessa maneira utilizando o conceito de SSG.
 
+Capitulo 4: Produto & Checkout - SSG com parâmetro dinâmico
+
+Nessa aula vamos começar a entender as especificidades do NextJS sobre a geração de páginas estáticas com parâmetros dinâmicos, e conhecer o método getStaticPaths que especifica quais páginas devem ser geradas durante o build do nosso app.
 
 Capitulo 4: Produto & Checkout - Fallback do SSG
 
