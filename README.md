@@ -135,3 +135,7 @@ Nessa aula, nós vamos recuperar os dados da compra e inseri-los dentro da pági
 Capitulo 4: Produto & Checkout - Redirect no SSR
 
 Nessa aula, vamos configurar nossa página de sucesso para fazer um redirecionamento pelo lado do servidor quando um ID não for informado.
+
+Capitulo 4: Produto & Checkout - Trabalhando com SEO
+
+Nessa aula entederemos como trabalhar com metatags nas páginas da nossa aplicação, e como configurar esses atributos em cada página.
