@@ -126,3 +126,8 @@ Nessa aula vamos integrar todas as funcionalidades da nossa aplicação, criando
 Capitulo 4: Produto & Checkout - Estrutura de sucesso
 
 Agora vamos estilizar a nossa página de sucesso para preparar ela para receber os dados após a compra.
+
+
+Capitulo 4: Produto & Checkout - Dados da compra no sucesso
+
+Nessa aula, nós vamos recuperar os dados da compra e inseri-los dentro da página de sucesso para exibir o sucesso da compra com os dados da API.
