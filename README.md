@@ -72,3 +72,8 @@ Capitulo 3: Integração com Stripe - Configurando conta Stripe
 
 Nessa aula, vamos ver como configurar a conta do Stripe e fazer o cadastro dos produtos para poder preparar nossa aplicação para consumir a API.
 
+
+Capitulo 3: Integração com Stripe - Buscando produtos do Stripe
+
+Vamos agora entender como utilizar a SDK do Stripe para realizar uma busca dos produtos cadastrados para poder exibí-los na nossa listagem de produtos.
+
