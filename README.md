@@ -96,3 +96,7 @@ Capitulo 4: Produto & Checkout - Estrutura da página de produto
 
 Agora vamos criar a estrutura visual da página de produto, para preparar a página para receber as funcionalidades.
 
+
+Capitulo 4: Produto & Checkout - Caregando dados do produto
+
+Nessa aula vamos entender como criar páginas dinâmicas no NextJS à partir do parâmetro enviado a ela, e carregaremos os dados dos nossos produtos dessa maneira utilizando o conceito de SSG.
