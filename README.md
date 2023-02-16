@@ -112,3 +112,8 @@ Nessa aula entenderemos o que é o parâmetro fallback do método getStaticPaths
 Capitulo 4: Produto & Checkout - Prefetch de links
 
 Agora vamos conhecer mais uma feature do NextJS, que é um prefetch de páginas à partir do Link.
+
+
+Capitulo 4: Produto & Checkout - Checkout no Stripe
+
+Agora que já sabemos como criar as rotas server-side, vamos utilizar dessas rotas para criar uma sessão de checkout no stripe para a finalização da compra pelo Stripe.

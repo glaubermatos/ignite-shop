@@ -2,6 +2,7 @@ import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Stripe from 'stripe'
+import { URL } from 'url'
 import { stripe } from '../../lib/stripe'
 import { ImageContainer, ProductContainer, ProductDetails } from '../../styles/pages/product'
 
@@ -11,6 +12,7 @@ interface Product {
     description: string,
     imageUrl: string,
     price: string,
+    defaultPriceId: string,
 }
 
 interface ProductProps {
@@ -26,6 +28,10 @@ export default function Product({ product }: ProductProps) {
         )
     }
 
+    async function handleBuyProduct() {
+        console.log(product.defaultPriceId)
+    }
+
     return (
         <ProductContainer>
             <ImageContainer>
@@ -39,7 +45,7 @@ export default function Product({ product }: ProductProps) {
                 <div dangerouslySetInnerHTML={{__html:product.description}}></div>
                 {/* <p>{product.description}</p> */}
 
-                <button>
+                <button onClick={handleBuyProduct} >
                     Comprar agora
                 </button>
             </ProductDetails>
@@ -84,7 +90,8 @@ export const getStaticProps: GetStaticProps<any, {id: string}> = async ({params}
         price: new Intl.NumberFormat('pt-BR', {
             style: 'currency',
             currency: 'BRL'
-        }).format(price.unit_amount / 100)
+        }).format(price.unit_amount / 100),
+        defaultPriceId: price.id,
     }
 
     return {
