@@ -131,3 +131,7 @@ Agora vamos estilizar a nossa página de sucesso para preparar ela para receber 
 Capitulo 4: Produto & Checkout - Dados da compra no sucesso
 
 Nessa aula, nós vamos recuperar os dados da compra e inseri-los dentro da página de sucesso para exibir o sucesso da compra com os dados da API.
+
+Capitulo 4: Produto & Checkout - Redirect no SSR
+
+Nessa aula, vamos configurar nossa página de sucesso para fazer um redirecionamento pelo lado do servidor quando um ID não for informado.
