@@ -90,3 +90,9 @@ Agora vamos utilizar a classe Intl para poder formatar o preço dos produtos e e
 Capitulo 4: Produto & Checkout - Navegação via Link
 
 Nessa aula vamos entender sobre como a navegação funciona no NextJS, e como podemos utilizar as ferramentas que o NextJS provém para ter uma navegação melhor na nossa aplicação.
+
+
+Capitulo 4: Produto & Checkout - Estrutura da página de produto
+
+Agora vamos criar a estrutura visual da página de produto, para preparar a página para receber as funcionalidades.
+
